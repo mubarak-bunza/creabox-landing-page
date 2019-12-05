@@ -75,4 +75,19 @@ main .fourth .para-quo {
 main .fifth {
   background-color: #27214c;
 }
+
+main .sixth .card {
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 11px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 11px -7px rgba(0, 0, 0, 0.75);
+}
+
+main .sixth .card img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+main .sixth .carousel-indicators {
+  background-color: coral;
+}
 /*# sourceMappingURL=style.css.map */

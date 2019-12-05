@@ -100,4 +100,21 @@ main {
             
         }
     }
+
+    // sixth section
+    .sixth {
+        .card {
+            border-radius: 20px;
+            -webkit-box-shadow: 4px 4px 11px -7px rgba(0,0,0,0.75);
+            -moz-box-shadow: 4px 4px 11px -7px rgba(0,0,0,0.75);
+            box-shadow: 4px 4px 11px -7px rgba(0,0,0,0.75);
+            img {
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+            }
+        }
+        .carousel-indicators {
+            background-color: coral;
+        }
+    }
 }
