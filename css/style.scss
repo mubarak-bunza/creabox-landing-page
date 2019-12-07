@@ -116,6 +116,7 @@ main {
         }
         .carousel-item .my-display {
             display: inline-block;
+            width: 300px;
             // flex-direction: row;
             // flex: 1 0 auto;
 
@@ -123,7 +124,7 @@ main {
         }
         .carousel-indicators {
             margin-top: 20px;
-            background-color: blue;
+            background-color: green;
         }
     }
 
@@ -153,7 +154,7 @@ main {
         }
     }
 
-    // eight
+    // eight section
     .eight {
         font-size: 15px;
         h5 {
@@ -183,7 +184,7 @@ footer {
     
     .clip-wrap {
         position: relative;
-        width: ;
+        // width: ;
         height: 5vmin;
         background: white;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);

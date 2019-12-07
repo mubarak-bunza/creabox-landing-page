@@ -60,7 +60,7 @@ main .second .row button {
 }
 
 main .third {
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
 }
 
 main .fourth .img-quo {
@@ -87,16 +87,14 @@ main .sixth .card img {
   border-top-left-radius: 20px;
 }
 
-main .sixth .carousel-item  .my-display{
-  /* display: -webkit-box; */
-  /* display: -ms-flexbox; */
+main .sixth .carousel-item .my-display {
   display: inline-block;
   width: 300px;
 }
 
 main .sixth .carousel-indicators {
   margin-top: 20px;
-  background-color: coral;
+  background-color: green;
 }
 
 main .seventh {
@@ -141,7 +139,7 @@ main .eight ul {
 
 main .eight ul li {
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 main .eight ul li a {
@@ -155,11 +153,10 @@ footer {
 
 footer .clip-wrap {
   position: relative;
-  width: vmin;
   height: 5vmin;
   background: white;
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 footer .foo-clip {
@@ -169,12 +166,53 @@ footer .foo-clip {
   bottom: 1px;
   left: 1px;
   background: #6455c2;
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 footer .brand-icons img {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+#button-top {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button-top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button-top:active {
+  background-color: #555;
+}
+
+#button-top.show {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
