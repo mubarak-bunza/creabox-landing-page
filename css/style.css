@@ -73,7 +73,7 @@ main .fourth .para-quo {
 }
 
 main .fifth {
-  background-color: #27214c;
+  background-color: #6455c2;
 }
 
 main .sixth .card {
@@ -87,7 +87,94 @@ main .sixth .card img {
   border-top-left-radius: 20px;
 }
 
+main .sixth .carousel-item  .my-display{
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: inline-block;
+  width: 300px;
+}
+
 main .sixth .carousel-indicators {
+  margin-top: 20px;
   background-color: coral;
+}
+
+main .seventh {
+  background-color: #fef5ed;
+  border-radius: 20px;
+}
+
+main .seventh h4 {
+  line-height: 30px;
+}
+
+main .seventh input {
+  border-radius: 50px;
+  border: 0px;
+  padding: 10px 15px;
+  width: 75%;
+}
+
+main .seventh .row button {
+  background-color: orange;
+  color: white;
+  border-radius: 50px;
+  border: 0px;
+  padding: 5px 10px;
+  position: relative;
+  left: -90px;
+}
+
+main .eight {
+  font-size: 15px;
+}
+
+main .eight h5 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+main .eight ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+main .eight ul li {
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+main .eight ul li a {
+  color: inherit;
+}
+
+footer {
+  background-color: #6455c2;
+  color: white;
+}
+
+footer .clip-wrap {
+  position: relative;
+  width: vmin;
+  height: 5vmin;
+  background: white;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+footer .foo-clip {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  background: #6455c2;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+footer .brand-icons img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 /*# sourceMappingURL=style.css.map */
