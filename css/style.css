@@ -41,8 +41,17 @@ main .first .clip {
 }
 
 main .first .my-cards {
-  width: 85%;
+  width: 75%;
   font-size: 12px;
+}
+
+main .first .my-cards div[class*='col-md-3'] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .first .my-cards h4 {
@@ -50,17 +59,31 @@ main .first .my-cards h4 {
   font-weight: bold;
 }
 
-main .first .card {
+main .first .my-cards .card {
   border-radius: 20px;
   border: 0px;
   -webkit-box-shadow: 4px 4px 11px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 11px -7px rgba(0, 0, 0, 0.75);
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  main .first .my-cards .card {
+    margin-bottom: 20px;
+  }
 }
 
 main .second .row button {
   background-color: orange;
   color: white;
   border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  main .second div[class*='col-md-4'] {
+    margin: 10px 0px;
+    text-align: center;
+  }
 }
 
 main .third {
