@@ -191,24 +191,23 @@ footer .brand-icons img {
 }
 
 #button-top {
-  display: inline-block;
-  background-color: #FF9800;
+  display: none;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: orange;
   width: 50px;
   height: 50px;
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
+  bottom: 200px;
   right: 30px;
   -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
   transition: background-color .3s,  opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
   z-index: 1000;
 }
 
-#button-top::after {
-  content: "\f077";
+#button-top .top-arrow {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
@@ -218,6 +217,7 @@ footer .brand-icons img {
 }
 
 #button-top:hover {
+  text-decoration: none;
   cursor: pointer;
   background-color: #333;
 }
