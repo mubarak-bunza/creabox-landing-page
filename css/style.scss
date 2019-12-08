@@ -123,8 +123,24 @@ main {
             // background-color: blue !important;
         }
         .carousel-indicators {
-            margin-top: 20px;
-            background-color: green;
+            position: relative;
+
+            // margin-top: 40px;
+            // color: tomato;
+
+            
+            li {
+                border: 2px solid tomato;
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+                border-radius: 100%;
+                
+            }
+            li[class*="active"] {
+                background-color: tomato;
+
+            }
         }
     }
 

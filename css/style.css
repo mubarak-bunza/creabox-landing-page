@@ -97,8 +97,19 @@ main .sixth .carousel-item .my-display {
 }
 
 main .sixth .carousel-indicators {
-  margin-top: 20px;
-  background-color: green;
+  position: relative;
+}
+
+main .sixth .carousel-indicators li {
+  border: 2px solid tomato;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+main .sixth .carousel-indicators li[class*="active"] {
+  background-color: tomato;
 }
 
 main .seventh {
