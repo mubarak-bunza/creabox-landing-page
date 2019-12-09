@@ -6,6 +6,10 @@ header {
   background-image: url("../images/background_creabox.png") !important;
 }
 
+header div[class*='container'] {
+  width: 75%;
+}
+
 header nav a {
   font-size: 14px;
 }
@@ -25,6 +29,15 @@ header .row button {
   background-color: orange;
   color: white;
   border-radius: 50px;
+}
+
+@media (max-width: 375px) {
+  header .creabox-logo {
+    width: 100px;
+  }
+  header div[class*='container'] {
+    width: 100%;
+  }
 }
 
 main .first {
@@ -88,6 +101,15 @@ main .second .row button {
 
 main .third {
   background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  main .third .about {
+    text-align: center;
+  }
+  main .third .inner-cols div[class*='col-md-4'] {
+    width: 30%;
+  }
 }
 
 main .fourth .img-quo {

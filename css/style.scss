@@ -29,6 +29,10 @@ body {
 
 // Header
 header {
+    div[class*='container'] {
+        width: 75%;
+    }
+
     background-image: url('../images/background_creabox.png') !important;
     // background-size: cover;
     // height: 80vh;
@@ -50,6 +54,14 @@ header {
         background-color: orange;
         color: white;
         border-radius: 50px;
+    }
+    @include mobile(){
+        .creabox-logo {
+            width: 100px;
+        }
+        div[class*='container'] {
+            width: 100%;
+        }
     }
 }
 
@@ -120,6 +132,15 @@ main {
     // third section
     .third {
         background-color: #f9f9f9;
+        @include ipad(){
+            .about {
+                text-align: center;
+            }
+
+            .inner-cols div[class*='col-md-4']{
+                width: 30%;
+            }
+        }
     }
     
     // fourth section
