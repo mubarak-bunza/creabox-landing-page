@@ -25,10 +25,23 @@ header .sign-in a {
   color: orangered !important;
 }
 
+header .sign-in:hover {
+  background-color: #333;
+}
+
+header .sign-in:hover a {
+  color: white !important;
+}
+
 header .row button {
   background-color: orange;
   color: white;
   border-radius: 50px;
+}
+
+header .row button:hover {
+  background-color: #333;
+  color: white;
 }
 
 @media (max-width: 375px) {
@@ -96,6 +109,10 @@ main .second .row button {
   background-color: orange;
   color: white;
   border-radius: 50px;
+}
+
+main .second .row button:hover {
+  background-color: #333;
 }
 
 @media (max-width: 768px) {
@@ -174,6 +191,7 @@ main .sixth .carousel-indicators li[class*="active"] {
 }
 
 main .seventh {
+  width: 75%;
   background-color: #fef5ed;
   border-radius: 20px;
 }
@@ -199,6 +217,23 @@ main .seventh .row button {
   left: -90px;
 }
 
+main .seventh .row button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 375px) {
+  main .seventh {
+    width: 90%;
+  }
+  main .seventh input {
+    width: 100%;
+    display: inline;
+  }
+  main .seventh .row button {
+    position: unset;
+  }
+}
+
 main .eight {
   font-size: 15px;
 }
@@ -222,9 +257,21 @@ main .eight ul li a {
   color: inherit;
 }
 
+@media (max-width: 768px) {
+  main .eight div[class='row'] {
+    text-align: center;
+  }
+}
+
 footer {
   background-color: #6455c2;
   color: white;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
 }
 
 footer .clip-wrap {
@@ -233,6 +280,21 @@ footer .clip-wrap {
   background: white;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@media (max-width: 768px) {
+  footer .clip-wrap {
+    width: 7vmin;
+    height: 7vmin;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer .clip-wrap {
+    width: 10vmin;
+    height: 10vmin;
+  }
 }
 
 footer .foo-clip {

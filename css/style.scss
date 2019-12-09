@@ -48,12 +48,24 @@ header {
         a {
             color: orangered !important;
         }
+
+        &:hover {
+            background-color:#333;
+            a {
+                color: white !important;
+            }
+        }
     }
 
     .row button {
         background-color: orange;
         color: white;
         border-radius: 50px;
+
+        &:hover {
+            background-color: #333;
+            color: white;
+        }
     }
     @include mobile(){
         .creabox-logo {
@@ -118,7 +130,12 @@ main {
             background-color: orange;
             color: white;
             border-radius: 50px;
+
+            &:hover {
+                background-color: #333;
+            }
         }
+
 
         @include ipad(){
             div[class*='col-md-4']{
@@ -212,6 +229,7 @@ main {
 
     // seventh section
     .seventh {
+        width: 75%;
         background-color: #fef5ed;
         border-radius: 20px;
         h4 {
@@ -233,6 +251,23 @@ main {
             padding: 5px 10px;
             position: relative;
             left: -90px;
+
+            &:hover {
+                background-color:#333;
+            }
+        }
+        @include mobile() {
+            width: 90%;
+
+            input {
+                width: 100%;
+                display: inline;
+            }
+
+            .row button {
+                // left: unset;
+                position: unset;
+            }
         }
     }
 
@@ -254,6 +289,12 @@ main {
                 }
             }
         }
+
+        @include ipad() {
+            div[class='row']{
+                text-align: center;
+            }
+        }
     }
 
 }
@@ -263,7 +304,9 @@ footer {
     background-color:#6455c2;
     color: white;
 
-    
+    @include ipad() {
+        text-align: center;
+    }
     .clip-wrap {
         position: relative;
         // width: ;
@@ -271,6 +314,16 @@ footer {
         background: white;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         
+        @include ipad(){
+            width: 7vmin;
+            height: 7vmin;
+            margin-bottom: 5px;
+        }
+
+        @include mobile() {
+           width: 10vmin; 
+           height: 10vmin;
+        }
     }
 
     .foo-clip {
