@@ -99,13 +99,15 @@ main {
                 box-shadow: 4px 4px 11px -7px rgba(0,0,0,0.75);
                 width: 250px;
                 
-                @include ipad(){
+            }
+            @include ipad(){
+                .card {
 
                     margin-bottom: 20px;
                 }
-                @include mobile(){
-                    // width: 70%;
-                }
+            }
+            @include mobile(){
+                width: 100%;
             }
         }
     }
@@ -167,6 +169,11 @@ main {
 
     // sixth section
     .sixth {
+        width: 75%;
+
+        @include mobile(){
+            width: 100%;
+        }
         .card {
             border-radius: 20px;
             -webkit-box-shadow: 4px 4px 11px -7px rgba(0,0,0,0.75);
@@ -310,6 +317,17 @@ footer {
         font-size: 2em;
         line-height: 50px;
         color: #fff;
+    }
+    @include mobile(){
+        width: 40px;
+        height: 40px;
+        right: 5px;
+
+        .top-arrow {
+            font-size: 1em;
+            font-weight: bold;
+            line-height: 35px;
+        }
     }
     &:hover {
         text-decoration: none;
