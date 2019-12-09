@@ -232,43 +232,63 @@ main {
         width: 75%;
         background-color: #fef5ed;
         border-radius: 20px;
-        h4 {
-            line-height: 30px;
+        
+        @include mobile() {
+            width: 90%;
         }
 
-        input {
+        h4 {
+            line-height: 30px;
+            margin-bottom: 40px;
+
+            @include ipad(){
+                text-align: center;
+            }
+        }
+
+        .row .input-group {
+            width: 80%;
+            background-color: white;
             border-radius: 50px;
-            border: 0px;
-            padding: 10px 15px;
-            width: 75%;
-            
+            padding: 5px 10px;
+            @include mobile(){
+                width: 100%;
+            }
+            @include ipad(){
+                width: 100%;
+                margin: 0px auto ;
+
+            }
+            input {
+                border-radius: 50px;
+                outline: none;
+                // width: 75%;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .form-control:focus{
+                outline: none;
+            }
         }
         .row button {
             background-color: orange;
             color: white;
             border-radius: 50px;
             border: 0px;
-            padding: 5px 10px;
-            position: relative;
-            left: -90px;
+            margin-left: 5px;
+            // padding: 5px 10px;
+            // position: relative;
+            // top: -36px;
+            // left: 80%;
 
             &:hover {
                 background-color:#333;
             }
         }
-        @include mobile() {
-            width: 90%;
-
-            input {
-                width: 100%;
-                display: inline;
-            }
-
-            .row button {
-                // left: unset;
-                position: unset;
-            }
-        }
+       
     }
 
     // eight section
